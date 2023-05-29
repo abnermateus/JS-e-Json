@@ -33,7 +33,7 @@ animal.habitat = "Rua";
 animal.alimento = "Carne";
 */
 
-//Ex5
+/*Ex5, Ex6 e Ex7
 var animaisJSON = `{
     "animais": [
       {
@@ -76,22 +76,67 @@ animaisObj.animais[1].habitat = "Floresta Amazônica";
 animaisObj.animais[1].alimento = "Carnívoro";
 
 for (var i = 0; i < animaisObj.animais.length; i++) {
-    console.log("Nome: " + animaisObj.animais[i].nome);
-    console.log("Espécie: " + animaisObj.animais[i].especie);
-    console.log("Habitat: " + animaisObj.animais[i].habitat);
-    console.log("Alimento: " + animaisObj.animais[i].alimento);
-    console.log(" ");
+  console.log("Nome: " + animaisObj.animais[i].nome);
+  console.log("Espécie: " + animaisObj.animais[i].especie);
+  console.log("Habitat: " + animaisObj.animais[i].habitat);
+  console.log("Alimento: " + animaisObj.animais[i].alimento);
+  console.log(" ");
 }
 
 animaisObj.animais.push({ nome: "Urso", especie: "Ursus arctos", habitat: "Floresta", alimento: "Onívoro" });
 
 for (var i = 0; i < animaisObj.animais.length; i++) {
-    console.log("Nome: " + animaisObj.animais[i].nome);
-    console.log("Espécie: " + animaisObj.animais[i].especie);
-    console.log("Habitat: " + animaisObj.animais[i].habitat);
-    console.log("Alimento: " + animaisObj.animais[i].alimento);
-    console.log(" ");
+  console.log("Nome: " + animaisObj.animais[i].nome);
+  console.log("Espécie: " + animaisObj.animais[i].especie);
+  console.log("Habitat: " + animaisObj.animais[i].habitat);
+  console.log("Alimento: " + animaisObj.animais[i].alimento);
+  console.log(" ");
 }
+
+var nomeAnimal = "Girafa";
+
+var indicePorNome = animaisObj.animais.map((animal, index) => {
+  if (animal.nome === nomeAnimal) {
+    return index;
+  }
+}).findIndex(index => index !== undefined);
+
+console.log(indicePorNome);
+
+var habitatAnimal = "Floresta";
+
+var indicePorHabitat = animaisObj.animais.map((animal, index) => {
+  if (animal.habitat === habitatAnimal) {
+    return index;
+  }
+}).findIndex(index => index !== undefined);
+
+console.log(indicePorHabitat);
+
+var buscaPorNome = animaisObj.animais.filter(animal => animal.nome === nomeAnimal);
+console.log(buscaPorNome);
+
+buscaPorNome = animaisObj.animais.filter(animal => animal.nome != nomeAnimal);
+console.log(buscaPorNome);
+*/
+ 
+/*Ex8
+document.getElementById("ex8").addEventListener("click", function(){
+    alert("Sou uma mensagem gerada com JavaScript");
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

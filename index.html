@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <style>
+        @keyframes variacaoCor {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: cyan;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        body {
+            width: 200px;
+            height: 200px;
+            animation: variacaoCor 15s linear infinite;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        #ex8 {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin: 0 auto;
+            display: block;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <button id="ex8">Retire o comentário do Ex8 no JS e depois clique aqui</button>
     <script src="script.js"></script>
 </body>
+
 </html>
