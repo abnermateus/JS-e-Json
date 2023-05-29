@@ -119,7 +119,7 @@ console.log(buscaPorNome);
 buscaPorNome = animaisObj.animais.filter(animal => animal.nome != nomeAnimal);
 console.log(buscaPorNome);
 */
- 
+
 /*Ex8
 document.getElementById("ex8").addEventListener("click", function(){
     alert("Sou uma mensagem gerada com JavaScript");
