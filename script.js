@@ -126,6 +126,56 @@ document.getElementById("ex8").addEventListener("click", function(){
 });
 */
 
+/*Ex9
+document.getElementById("ex9").addEventListener("click", function () {
+  var input = document.getElementById("input9");
+
+  if (input.value > 0 && input.value <= 5) {
+    alert("Insuficiente");
+  }
+  if (input.value > 5 && input.value <= 7) {
+    alert("Bom");
+  }
+  if (input.value > 7 && input.value <= 8) {
+    alert("Muito bom");
+  }
+  if (input.value > 8 && input.value <= 10) {
+    alert("Ótimo");
+  }
+});
+*/
+
+/*Ex10
+function popularTabelaAnimais() {
+  var animais = JSON.parse(animaisJSON).animais;
+  var tabelaBody = document.querySelector("#tabela-animais tbody");
+
+  animais.forEach(function (animal) {
+      var linha = document.createElement("tr");
+
+      var colunaNome = document.createElement("td");
+      colunaNome.textContent = animal.nome;
+      linha.appendChild(colunaNome);
+
+      var colunaEspecie = document.createElement("td");
+      colunaEspecie.textContent = animal.especie;
+      linha.appendChild(colunaEspecie);
+
+      var colunaHabitat = document.createElement("td");
+      colunaHabitat.textContent = animal.habitat;
+      linha.appendChild(colunaHabitat);
+
+      var colunaAlimento = document.createElement("td");
+      colunaAlimento.textContent = animal.alimento;
+      linha.appendChild(colunaAlimento);
+
+      tabelaBody.appendChild(linha);
+  });
+}
+popularTabelaAnimais();
+*/
+
+
 
 
 

@@ -10,53 +10,53 @@
 
 <body>
     <style>
-        @keyframes variacaoCor {
-            0% {
-                background-color: blue;
-            }
-
-            50% {
-                background-color: cyan;
-            }
-
-            100% {
-                background-color: blue;
-            }
-        }
-
         body {
             width: 200px;
             height: 200px;
-            animation: variacaoCor 15s linear infinite;
+        }
+
+        .container {
             display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
+            flex-direction: column;
         }
 
         .questoes {
-            display: inline;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px;
         }
 
-        #ex8 {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            margin: 0 auto;
-            display: inline
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+        .ex{
+            background-color: goldenrod;
         }
 
-        button:hover {
-            background-color: #45a049;
-        }
     </style>
-    <container>
+    <div class="container">
         <p class="questoes">Questão 8</p>
-        <button id="ex8">Retire o comentário do Ex8 no JS e depois clique aqui</button>
-    </container>
+        <button class="ex" id="ex8">Retire o comentário do Ex8 no JS e depois clique aqui</button>
+    </div>
+    <div class="container">
+        <p class="questoes">Questão 9</p>
+        <input type="number" id="input9">
+        <button class="ex" id="ex9">Digite um valor positivo acima, retire o comentário do Ex9 no JS e depois clique aqui para ver o resultado</button>
+    </div>
+    <div class="container">
+        <p class="questoes">Questão 10</p>  
+        <p>Retire os comentários do Ex5 e Ex10 no JS </p>  
+        <table id="tabela-animais">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Espécie</th>
+                    <th>Habitat</th>
+                    <th>Alimento</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+                
+    </div>
+
     <script src="script.js"></script>
 </body>
 
